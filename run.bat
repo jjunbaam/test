@@ -1,9 +1,11 @@
 @echo off
-echo ========================================================
-echo   GitLab QA Impact Analyzer - Local Server Starting...
-echo ========================================================
-echo.
-echo Opening Web Portal at http://localhost:8000
-echo.
-python -m uvicorn app:app --host 0.0.0.0 --port 8000 --reload
-pause
+cd /d "%~dp0"
+if not exist ".venv\Scripts\python.exe" (
+  echo Run setup.ps1 in PowerShell first.
+  exit /b 1
+)
+if not exist "config.local.json" (
+  echo Copy config.example.json to config.local.json and review settings first.
+  exit /b 1
+)
+".venv\Scripts\python.exe" -m uvicorn portal.app:app --host 127.0.0.1 --port 8000

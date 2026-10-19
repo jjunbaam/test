@@ -1,0 +1,32 @@
+{
+  "gitlab_url": "https://gitlab.somansa.com",
+  "project_id": "317",
+  "repository_url": "https://gitlab.somansa.com/platform/git-dlpcenter.git",
+  "targets": {
+    "PR": "master",
+    "R": "2025_ES5_Release_버전_분기"
+  },
+  "sourcegraph_url": "http://10.216.195.85:9500",
+  "sourcegraph_repository": "gitlab.somansa.com/platform/git-dlpcenter",
+  "pi_command": [
+    "pi"
+  ],
+  "pi_provider": "google",
+  "pi_model": "",
+  "pi_timeout_seconds": 180,
+  "request_timeout_seconds": 30,
+  "git_timeout_seconds": 600,
+  "ca_bundle": "",
+  "data_directory": ".qa-data",
+  "screen_catalog": "screens.local.json",
+  "max_files": 20000,
+  "max_file_bytes": 1000000,
+  "max_source_bytes": 100000000,
+  "max_graph_hops": 5,
+  "max_evidence_paths": 60,
+  "max_sourcegraph_queries": 12,
+  "max_ai_requests": 12,
+  "max_prompt_chars": 60000,
+  "pi_expected_base_url": "https://genai.lab.somansa.com/service/gemini/v1beta",
+  "pi_config_directory": ""
+}

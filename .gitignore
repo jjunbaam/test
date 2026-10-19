@@ -4,3 +4,8 @@ __pycache__/
 .env
 .env.*
 !.env.example
+config.local.json
+screens.local.json
+.qa-data/
+*.pem
+*.key

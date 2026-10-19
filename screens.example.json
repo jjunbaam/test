@@ -1,0 +1,14 @@
+{
+  "description": "실제 DLPCenter 화면만 등록하세요. 아래는 형식 설명이며 기본 실행에 사용되지 않습니다. AI는 여기에 없는 메뉴를 만들 수 없습니다.",
+  "screens": [
+    {
+      "id": "example-only",
+      "name": "실제 화면 이름으로 교체",
+      "menu_path": "실제 상위 메뉴 > 실제 하위 메뉴",
+      "view_paths": ["실제/저장소/경로/example.jsp"],
+      "routes": ["/실제/조회.sms"],
+      "features": ["확인된 기능 이름"],
+      "verified_refs": ["master", "2025_ES5_Release_버전_분기"]
+    }
+  ]
+}
