@@ -60,39 +60,51 @@ async def commits(request):
         return response_error(e)
 
 
-def connection_checks(c):
-    result = {}
+def connection_check(c, service, label=None):
+    # Diagnostics have shorter timeouts than real repository analysis. Do not mutate
+    # the caller's configuration or shorten actual analysis/model requests.
+    from copy import copy
+    from urllib.parse import quote
+    c = copy(c)
+    c.values = dict(c.values)
+    c.values['request_timeout_seconds'] = min(c['request_timeout_seconds'], 10)
+    c.values['pi_timeout_seconds'] = min(c['pi_timeout_seconds'], 60)
     try:
-        project, _ = GitLab(c).get()
-        result['gitlab'] = {'status': 'ok', 'message': '프로젝트 조회 성공: ' + project.get('name', '')}
-        # Verify configured branch names independently.
-        from urllib.parse import quote
-        first_sha = None
-        for label, branch in c['targets'].items():
+        if service == 'gitlab':
+            project, _ = GitLab(c).get()
+            return {'status': 'ok', 'message': '프로젝트 조회 성공: ' + project.get('name', '')}
+        if service == 'target':
+            if label not in c['targets']:
+                raise SetupError('설정에 없는 반영 대상입니다.')
+            branch = c['targets'][label]
+            data, _ = GitLab(c).get('/repository/branches/' + quote(branch, safe=''))
+            return {'status': 'ok', 'message': branch + ' / ' + data['commit']['id'][:12]}
+        if service == 'sourcegraph':
+            if not c['sourcegraph_url']:
+                return {'status': 'disabled', 'message': 'Sourcegraph 주소가 설정되지 않았습니다.'}
+            # Revision-pinned search depends on a known target SHA, not on completion
+            # of other UI checks. Report this prerequisite separately on failure.
+            first_label = next(iter(c['targets']))
             try:
-                data, _ = GitLab(c).get('/repository/branches/' + quote(branch, safe=''))
-                first_sha = first_sha or data['commit']['id']
-                result[label] = {'status': 'ok', 'message': branch + ' / ' + data['commit']['id'][:12]}
+                data, _ = GitLab(c).get('/repository/branches/' + quote(c['targets'][first_label], safe=''))
             except SetupError as e:
-                result[label] = {'status': 'error', 'message': str(e)}
-        if first_sha:
-            found = Sourcegraph(c).search(first_sha, 'class')
-            result['sourcegraph'] = {'status': found['status'], 'message': found.get('warning') or ('대상 SHA 검색 완료. 결과 ' + str(len(found['paths'])) + '개. 검색 결과 0개는 인덱싱 준비를 증명하지 않습니다.')}
-        else:
-            result['sourcegraph'] = {'status': 'not_run', 'message': '대상 SHA를 가져오지 못해 검색 미실행'}
+                return {'status': 'not_run', 'message': 'Sourcegraph 검색 전 대상 SHA 조회 실패: ' + str(e)}
+            found = Sourcegraph(c).search(data['commit']['id'], 'class')
+            return {'status': found['status'], 'message': found.get('warning') or ('대상 SHA 검색 완료. 결과 ' + str(len(found['paths'])) + '개. 결과 0개는 인덱싱 준비를 증명하지 않습니다.')}
+        if service == 'pi':
+            return Pi(c).check()
+        raise SetupError('지원하지 않는 연결 검사입니다.')
     except SetupError as e:
-        result['gitlab'] = {'status': 'error', 'message': str(e)}
-        result['sourcegraph'] = {'status': 'not_run', 'message': 'GitLab 대상 SHA 조회 실패로 미실행'}
-    try:
-        result['pi'] = Pi(c).check()
-    except SetupError as e:
-        result['pi'] = {'status': 'error', 'message': str(e)}
-    return result
+        return {'status': 'error', 'message': str(e)}
 
 
 async def checks(request):
     try:
-        return JSONResponse(await run_in_threadpool(connection_checks, config()))
+        service = request.path_params.get('service')
+        if service not in ('gitlab', 'target', 'sourcegraph', 'pi'):
+            raise SetupError('페이지를 새로고침한 뒤 서비스별 연결 검사를 실행하세요.')
+        data = await run_in_threadpool(connection_check, config(), service, request.query_params.get('label'))
+        return JSONResponse(data)
     except Exception as e:
         return response_error(e)
 
@@ -205,7 +217,7 @@ async def manual_check(request):
         return response_error(e)
 
 
-app = Starlette(debug=False, routes=[Route('/', home), Route('/api/settings', settings), Route('/api/branches', branches), Route('/api/commits', commits), Route('/api/checks', checks, methods=['POST']), Route('/api/analyze', analyze, methods=['POST']), Route('/api/jobs/{job_id}', job), Route('/api/reports', reports), Route('/api/reports/{job_id}', report), Route('/api/reports/{job_id}/check', manual_check, methods=['POST'])])
+app = Starlette(debug=False, routes=[Route('/', home), Route('/api/settings', settings), Route('/api/branches', branches), Route('/api/commits', commits), Route('/api/checks', checks, methods=['POST']), Route('/api/checks/{service}', checks, methods=['POST']), Route('/api/analyze', analyze, methods=['POST']), Route('/api/jobs/{job_id}', job), Route('/api/reports', reports), Route('/api/reports/{job_id}', report), Route('/api/reports/{job_id}/check', manual_check, methods=['POST'])])
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=['localhost', '127.0.0.1', 'testserver'])
 
 

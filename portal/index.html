@@ -10,7 +10,24 @@ function bind(id,fn){$(id).onclick=async()=>{const b=$(id);b.disabled=true;try{a
 function list(parent,values){const u=el('ul');for(const value of values||[])u.append(el('li',value));parent.append(u);}
 function field(parent,name,value){const p=el('p');p.append(el('strong',name+' '),document.createTextNode(value||'미확인'));parent.append(p);}
 async function init(){try{const s=await api('/api/settings');$('settings').textContent=`GitLab 프로젝트 ${s.project_id} · 화면 카탈로그 ${s.catalog_present?'있음':'없음'} · 연결 상태는 아직 확인하지 않았습니다.`;for(const [label,branch] of Object.entries(s.targets)){const l=el('label');const c=el('input');c.type='checkbox';c.value=label;l.append(c,document.createTextNode(` ${label} — ${branch}`));$('targets').append(l);}await loadHistory();}catch(e){error('settings',e);}}
-bind('check',async()=>{$('checks').textContent='실제 API와 Pi 응답을 확인하고 있습니다. Pi 실행에 시간이 걸릴 수 있습니다.';try{const data=await api('/api/checks',{});$('checks').replaceChildren();for(const [name,result]of Object.entries(data))$('checks').append(el('p',`${name}: ${result.status}\n${result.message}`,result.status==='ok'?'ok':'sub'));}catch(e){error('checks',e);}});
+bind('check',async()=>{
+    const settings=await api('/api/settings');
+    const checks=[{name:'GitLab',path:'gitlab'},{name:'Sourcegraph',path:'sourcegraph'},{name:'Pi',path:'pi'},...Object.keys(settings.targets).map(label=>({name:label+' 브랜치',path:'target?label='+encodeURIComponent(label)}))];
+    $('checks').replaceChildren(el('p','각 연결을 따로 확인합니다. Pi 응답 대기는 최대 60초, 화면의 요청 대기는 최대 90초입니다.','sub'));
+    const started=Date.now();
+    await Promise.allSettled(checks.map(async check=>{
+        const row=el('p',check.name+': 확인 중… 0초','status');$('checks').append(row);
+        const interval=setInterval(()=>{row.textContent=check.name+': 확인 중… '+Math.floor((Date.now()-started)/1000)+'초';},1000);
+        const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),90000);
+        try{
+            const response=await fetch('/api/checks/'+check.path,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}',signal:controller.signal});
+            const result=await response.json();if(!response.ok)throw Error(result.error||'연결 검사 요청 실패');
+            row.textContent=check.name+': '+result.status+' ('+Math.floor((Date.now()-started)/1000)+'초)\n'+result.message;
+            row.className=result.status==='ok'?'ok':'status';
+        }catch(e){row.textContent=check.name+': '+(e.name==='AbortError'?'90초 안에 포털 서버 응답을 받지 못했습니다. PowerShell 서버 상태를 확인하세요.':e.message);row.className='error';}
+        finally{clearInterval(interval);clearTimeout(timeout);}
+    }));
+});
 bind('find',async()=>{const data=await api('/api/branches?search='+encodeURIComponent($('search').value));$('branch').replaceChildren(el('option','Branch 선택'));$('branch').firstChild.value='';for(const b of data.items){const o=el('option',b.name);o.value=b.name;$('branch').append(o);}});
 $('branch').onchange=()=>{selected.clear();loadedBranch='';$('commits').replaceChildren();$('more').hidden=true;updateSelection();};
 function updateSelection(){$('selection').textContent=selected.size+'개 커밋 선택 · 최대 30개';}

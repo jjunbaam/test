@@ -253,6 +253,42 @@ print(json.dumps({'type':'message_end','message':{'role':'assistant','stopReason
         with self.assertRaisesRegex(SetupError, '한도'):
             Pi(self.config).invoke({'long': 'a'*100})
 
+    def test_connection_checks_have_independent_timeouts(self):
+        seen = {}
+        def fake_check(pi):
+            seen['timeout'] = pi.config['pi_timeout_seconds']
+            return {'status': 'ok', 'message': 'fixture'}
+        with patch.object(Pi, 'check', fake_check):
+            result = web.connection_check(self.config, 'pi')
+        self.assertEqual(result['status'], 'ok')
+        self.assertEqual(seen['timeout'], 60)
+        self.assertEqual(self.config['pi_timeout_seconds'], 180)
+        with patch.object(GitLab, 'get', side_effect=SetupError('fixture GitLab unavailable')):
+            result = web.connection_check(self.config, 'sourcegraph')
+        self.assertEqual(result['status'], 'not_run')
+        self.assertIn('대상 SHA', result['message'])
+
+    def test_slow_pi_does_not_hide_gitlab_result(self):
+        import threading
+        from concurrent.futures import ThreadPoolExecutor
+        started, release = threading.Event(), threading.Event()
+        def slow_check(pi):
+            started.set()
+            if not release.wait(5):
+                raise AssertionError('GitLab check was blocked behind Pi')
+            return {'status': 'ok', 'message': 'Pi fixture'}
+        with patch.object(web, 'config', return_value=self.config), patch.object(Pi, 'check', slow_check), patch.object(GitLab, 'get', return_value=({'name': 'fixture project'}, '')):
+            with TestClient(web.app) as client, ThreadPoolExecutor(max_workers=1) as pool:
+                future = pool.submit(client.post, '/api/checks/pi', json={})
+                try:
+                    self.assertTrue(started.wait(2))
+                    result = client.post('/api/checks/gitlab', json={})
+                    self.assertEqual(result.json()['status'], 'ok')
+                    self.assertFalse(future.done())
+                finally:
+                    release.set()
+                self.assertEqual(future.result(timeout=2).json()['status'], 'ok')
+
     def test_portal_http_and_manual_record(self):
         with patch.object(web, 'config', return_value=self.config):
             client = TestClient(web.app)
