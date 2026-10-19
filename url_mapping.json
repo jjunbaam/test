@@ -1,0 +1,1527 @@
+{
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/MailController.java": {
+    "sms_urls": [
+      "mailForm",
+      "sendMail",
+      "serivceMailForm",
+      "serivceSendMail"
+    ],
+    "screen_name": "API 컨트롤러 (MailController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/AlertController.java": {
+    "sms_urls": [
+      "updateAlertInfoConfirm",
+      "inputAlert",
+      "getAlertList",
+      "getAlertCount",
+      "findAlertList",
+      "updateAlertInfoConfirm",
+      "getAlertListJSON"
+    ],
+    "screen_name": "API 컨트롤러 (AlertController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/ProxyController.java": {
+    "sms_urls": [
+      "cancelRequest.json",
+      "cancelRequestGroup.json",
+      "ragAIProxy"
+    ],
+    "screen_name": "API 컨트롤러 (ProxyController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/ExportController.java": {
+    "sms_urls": [
+      "reportExport",
+      "reportExportdown"
+    ],
+    "screen_name": "API 컨트롤러 (ExportController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/PatternController.java": {
+    "sms_urls": [
+      "downloadPatternTemplateCsv.down",
+      "{",
+      "{",
+      "patternListData",
+      "patternBasicListData",
+      "tagListData",
+      "addTag",
+      "updateTag",
+      "deleteTag",
+      "addTagRel",
+      "deleteTagRel",
+      "addPatternBasic",
+      "findPatternTagListData",
+      "patterOrderList",
+      "updatePatterOrder",
+      "{",
+      "{",
+      "patternCheck",
+      "addPattern",
+      "updatePattern",
+      "deletePattern",
+      "uploadRegular",
+      "patternWithTagList",
+      "importPattern.json",
+      "exportPatternCheck.json"
+    ],
+    "screen_name": "API 컨트롤러 (PatternController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/manage/controller/AIAssetController.java": {
+    "sms_urls": [
+      "/getAiDefaultControl.json",
+      "/saveAiDefaultControl.json",
+      "/getAiAssetTabCounts.json",
+      "/getAiServiceTypeOptions.json",
+      "/getAiAgentGroups.json",
+      "/getAiAgentGroupDetail.json",
+      "/updateAiAgentGroup.json",
+      "/getAiServices.json",
+      "/getAiServiceDetail.json",
+      "/updateAiService.json",
+      "/getAiMcpServers.json",
+      "/getAiMcpServerDetail.json",
+      "/updateAiMcpServer.json",
+      "/addAiAgentGroup.json",
+      "/addAiService.json",
+      "/addAiMcpServer.json",
+      "/deleteAiAgentGroups.json",
+      "/deleteAiServices.json",
+      "/deleteAiMcpServers.json",
+      "/exportAiAgentGroupsCsv.json",
+      "/exportAiServicesCsv.json",
+      "/exportAiMcpServersCsv.json",
+      "/importAiAgentGroupsCsv.json",
+      "/importAiServicesCsv.json",
+      "/importAiMcpServersCsv.json",
+      "/getAiAssetUserList.json",
+      "/getAiAgentModelList.json",
+      "/getAiAgentMcpServerList.json"
+    ],
+    "screen_name": "API 컨트롤러 (AIAssetController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/AssetItemController.java": {
+    "sms_urls": [
+      "assetItemList",
+      "addAssetItem",
+      "findAssetItemList",
+      "assetItemView",
+      "checkAssetItemNameValidate",
+      "updateAssetItem",
+      "deleteAssetItem",
+      "updateAssetItemUse",
+      "updateAssetItemOrder"
+    ],
+    "screen_name": "API 컨트롤러 (AssetItemController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/AudittrailController.java": {
+    "sms_urls": [
+      "userAudittrailDetailData",
+      "userAuditAfterDetailData",
+      "userAudittrail",
+      "userAudittrailData",
+      "userAudittrailDetailData",
+      "endpointAudittrail",
+      "endpointAudittrailData",
+      "networkAudittrail",
+      "networkAudittrailData",
+      "enginAudittrail",
+      "enginAudittrailData",
+      "systemAudittrail",
+      "systemAudittrailData",
+      "findcommonTypeList",
+      "logTransferAudittrail",
+      "logTransferAudittrailData",
+      "dbmsAccountAudittrail",
+      "serverAccountAudittrail",
+      "dbmsAccountAudittrailData",
+      "serverAccountAudittrailData",
+      "accountAudittrailDetailData",
+      "exportDbmsAccountAudittrailData.down",
+      "exportServerAccountAudittrailData.down",
+      "portalAudittrail",
+      "findPortalAudittrailData",
+      "ocrAudittrail",
+      "ocrAudittrailData"
+    ],
+    "screen_name": "API 컨트롤러 (AudittrailController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/DataFormatController.java": {
+    "sms_urls": [
+      "dataFormatList",
+      "dataFormatView",
+      "dataFormatCheck",
+      "addDataFormat",
+      "updateDataFormat",
+      "deleteDataFormat",
+      "dataFormatTreeView"
+    ],
+    "screen_name": "API 컨트롤러 (DataFormatController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/PatternPropertyController.java": {
+    "sms_urls": [
+      "patternPropertyList",
+      "patternPropertyListData",
+      "getPatternPropertyList",
+      "patternPropertyView",
+      "patternPropertyViewJson",
+      "patternPropertyCheck",
+      "addPatternProperty",
+      "updatePatternProperty",
+      "deletePatternProperty",
+      "checkPatternPropertySupported",
+      "updatePatternPropertyToSupport",
+      "updateSensitiveLabel",
+      "sensitiveLabelListData",
+      "patternPropertyImportFile.json",
+      "patternPorpertyExportFile.json",
+      "checkPatternPropertyMsOfficeSupported"
+    ],
+    "screen_name": "API 컨트롤러 (PatternPropertyController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/policy/edr/controller/EdrAiPolicyController.java": {
+    "sms_urls": [
+      "findAIAssetList",
+      "findPolicyAIList",
+      "updatePolicyAI",
+      "insertPolicyAIJson",
+      "updatePolicyAIJson",
+      "checkAIPolicyName",
+      "deletePolicyAIJson",
+      "deletePolicyListAIJson",
+      "updateStatusPolicyAIJson",
+      "applyPolicyAIJson"
+    ],
+    "screen_name": "API 컨트롤러 (EdrAiPolicyController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/discovery/controller/CloudDiscoveryController.java": {
+    "sms_urls": [
+      "findCloudPolicyApplyTargetDeptList",
+      "findCloudPolicyApplyTargetEmpList",
+      "{",
+      "cloudUserList",
+      "findCloudList",
+      "cloudInfo",
+      "cloudInfoInput",
+      "cloudInfoUpdate",
+      "cloudInfoDelete",
+      "cloudUserUpdate",
+      "cloudOAuth.sms",
+      "cloudOAuthUpdate.sms",
+      "cloudPolicyList",
+      "findCloudPolicyList",
+      "{",
+      "cloudPolicyInput",
+      "cloudPolicyUpdate",
+      "cloudPolicyDelete",
+      "policyDesignationCloudManagement",
+      "policyDesignationCloudUpdate",
+      "discoveryCloudList",
+      "cloudTask.json",
+      "discoveryCloudClassifiedInfoUserRank",
+      "discoveryCloudClassifiedInfoDeptRank",
+      "discoveryCloudClassifiedInfoTrend",
+      "discoveryCloudHoldFileState",
+      "discoveryCloudHoldPatternRank",
+      "policyAccessControlList",
+      "findPolicyAccessControlList",
+      "{",
+      "policyAccessControlDetailInput",
+      "policyAccessControlDetailUpdate",
+      "policyAccessControlDetailDelete",
+      "policyDesignationAccessControlManagement",
+      "policyDesignationAccessControlUpdate",
+      "incidentsAccessControlList",
+      "incidentsAccessControlAddList",
+      "incidentsEndpointView"
+    ],
+    "screen_name": "API 컨트롤러 (CloudDiscoveryController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/filedownload/controller/DataDownloadController.java": {
+    "sms_urls": [
+      "download2.psms",
+      "download3.psms"
+    ],
+    "screen_name": "API 컨트롤러 (DataDownloadController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/UninstallGeneratorController.java": {
+    "sms_urls": [
+      "uninstallGenerator",
+      "uninstallGeneratorData"
+    ],
+    "screen_name": "API 컨트롤러 (UninstallGeneratorController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/filedownload/controller/FileDownloadController.java": {
+    "sms_urls": [
+      "/download.psms",
+      "method = RequestMethod.GET"
+    ],
+    "screen_name": "API 컨트롤러 (FileDownloadController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/policy/database/controller/PolicyDatabaseController.java": {
+    "sms_urls": [
+      "getDBiPolicySelItemInfo",
+      "policyDatabaseList",
+      "policyDatabaseControlList",
+      "PolicyServerList",
+      "PolicyServerControlList",
+      "policyServerAgentList",
+      "policyDatabaseTagList",
+      "PolicyServerTagList",
+      "policyBypassIPList",
+      "findPolicyDatabaseList",
+      "findPolicyServerAgentList",
+      "findPolicyBypassIPList",
+      "policyDatabaseView",
+      "PolicyServerView",
+      "policyServerAgentView",
+      "policyDatabaseTagView",
+      "PolicyServerTagView",
+      "policyBypassIPView",
+      "addPolicyDatabase",
+      "addPolicyServer",
+      "addPolicyServerAgent",
+      "addPolicyDatabaseTag",
+      "addPolicyServerTag",
+      "addPolicyBypassIP",
+      "updatePolicyDatabase",
+      "updatePolicyServer",
+      "updatePolicyServerAgent",
+      "updatePolicyDatabaseTag",
+      "updatePolicyServerTag",
+      "updatePolicyBypassIP",
+      "getPolicyBypassIPJson",
+      "updatePolicyDatabaseStatus",
+      "updatePolicyServerAgentStatus",
+      "addPolicyServerAgentJson",
+      "updatePolicyServerAgentJson",
+      "deletePolicyServerAgentJson",
+      "addPolicyDatabaseJson",
+      "addDataRuleTemplate",
+      "deleteDataRuleTemplate",
+      "updateDataRuleStar",
+      "updatePolicyDatabaseJson",
+      "deletePolicyDatabaseJson",
+      "deletePolicyDatabaseTagJson",
+      "getDBiUnUsedPolicy",
+      "deleteDBiUnUsedPolicy",
+      "findContentPreventPlusPolicyFullDeptEmpListByCommand",
+      "findApprovalPolicyTargetByCommand",
+      "getServiceNamePortByCommand",
+      "applyPolicyServerAgentJson",
+      "exportPolicyAccessControlJson",
+      "checkShadowMask",
+      "localControlServiceListData",
+      "findPolicyTargetServiceList",
+      "policyDatabaseMaskingList",
+      "addPolicyDatabaseMasking",
+      "updatePolicyDatabaseMasking",
+      "policyDatabaseMaskingView",
+      "PolicyServerMaskingList",
+      "updatePolicyServerMasking",
+      "addPolicyServerMasking",
+      "PolicyServerMaskingView",
+      "addPolicyBypassIPJson",
+      "updatePolicyBypassIPJson",
+      "deletePolicyBypassIPJson",
+      "policyDistributeBypass",
+      "downloadBypassZipFile",
+      "updatePolicyBypassStatus",
+      "stopProcessPacket"
+    ],
+    "screen_name": "API 컨트롤러 (PolicyDatabaseController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/report/internet/controller/ReportInternetController.java": {
+    "sms_urls": [
+      "internetNetAppsReportList",
+      "internetNetAppsReportListData",
+      "internetNetAppsReportView",
+      "addInternetNetAppsReport",
+      "updateInternetNetAppsReport",
+      "deleteInternetNetAppsReport",
+      "internetWebReportList",
+      "internetWebReportListData",
+      "internetWebReportView",
+      "addInternetWebReport",
+      "updateInternetWebReport",
+      "deleteInternetWebReport",
+      "internetReportAvailableList",
+      "internetReportConditionList",
+      "internetReportResultListData",
+      "internetReportTemplateView",
+      "internetReportTemplateDelete",
+      "internetReportImmediateAction",
+      "internetReportFileDown"
+    ],
+    "screen_name": "API 컨트롤러 (ReportInternetController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/policy/discovery/controller/PolicyRetentionController.java": {
+    "sms_urls": [
+      "retentionPolicyListPage",
+      "retentionPolicyList",
+      "retentionPolicyView",
+      "addRetentionPolicyPage",
+      "updateRetentionPolicyPage",
+      "updateRetentionPolicyJson",
+      "addRetentionPolicyJson",
+      "deleteRetentionPolicy",
+      "findRetentionPolicyUgroupList",
+      "findRetentionPolicyApplyTargetDeptList",
+      "findRetentionPolicyApplyTargetEmpList"
+    ],
+    "screen_name": "API 컨트롤러 (PolicyRetentionController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/policy/discovery/controller/PolicyPCDiscoveryController.java": {
+    "sms_urls": [
+      "pcDiscoverPolicyListPage",
+      "pcDiscoverPolicyList",
+      "pcDiscoverPolicyView",
+      "addPcDiscoverPolicyPage",
+      "updatePcDiscoverPolicyPage",
+      "updatePcDiscoverPolicy",
+      "addPcDiscoverPolicy",
+      "deletePcDiscoverPolicy",
+      "findPcDiscoverPolicyUgroupList",
+      "updatePcDiscoverPolicyUgroupList",
+      "findDiscoverPolicyApplyTargetDeptList",
+      "findDiscoverPolicyApplyTargetEmpList",
+      "findInspectConditionPatternList"
+    ],
+    "screen_name": "API 컨트롤러 (PolicyPCDiscoveryController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/policy/discoverA/controller/PolicyDiscoverADBsController.java": {
+    "sms_urls": [
+      "policyDiscoverADatabasesList",
+      "findPolicyDiscoverADatabasesList",
+      "policyDiscoverADatabasesView",
+      "addPolicyDiscoverADatabasesPage",
+      "updatePolicyDiscoverADatabasesPage",
+      "addPolicyDiscoverADatabasesJson",
+      "updatePolicyDiscoverADatabasesJson",
+      "deletePolicyDiscoverADatabasesJson",
+      "updateStatusPolicyDatabasesDiscoverAJson",
+      "applyPolicyDatabasesDiscoverJson",
+      "checkPolicyDiscoverADatabasesAccessible",
+      "exportDiscoverAPolicyDBsJson"
+    ],
+    "screen_name": "API 컨트롤러 (PolicyDiscoverADBsController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/policy/internet/controller/PolicyMalignantCodeController.java": {
+    "sms_urls": [
+      "policyMalignantCodeList",
+      "policyMalignantCodeView",
+      "findPolicyMalignantCodeList.json",
+      "findPolicyMalignantCodeView.json",
+      "isPolicyMalignantCodeDuplicate.json",
+      "insertPolicyMalignantCode.json",
+      "updatePolicyMalignantCode.json",
+      "deletePolicyMalignantCode.json"
+    ],
+    "screen_name": "API 컨트롤러 (PolicyMalignantCodeController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/incidents/database/controller/IncidentsDatabaseController.java": {
+    "sms_urls": [
+      "getSessionSnapshotImage",
+      "incidentsDatabaseSessionList",
+      "incidentsDatabaseSessionDetail",
+      "incidentsDatabaseSQLList",
+      "incidentsDatabaseSQLDetail",
+      "createNewDBControlBlockPolicy",
+      "findIncidentsDatabaseList.json",
+      "findIncidentsDatabaseListTotalCount.json",
+      "findIncidentsDatabaseDetail.json",
+      "findIncidentsDatabaseChart.json",
+      "findIncidentsDatabaseSummary.json",
+      "{",
+      "{",
+      "incidentsTelnetFtpList",
+      "incidentsTelnetFtpListDetail",
+      "getTelnetFTPLogSearch",
+      "getTelnetFTPLog",
+      "findIncidentsTelnetFTPFileDown",
+      "requestExportIncidentsDatabaseList",
+      "getRDPDetailLink",
+      "setRDPPlayAuditLog",
+      "incidentsDatabaseRealtimeSessionList",
+      "findRealtimeServiceList.json",
+      "findRealtimeSessionList.json",
+      "findRealtimeSessionChartData.json",
+      "killSessionData.json",
+      "findRealtimeSelectSessionData.json",
+      "incidentsDatabaseRdpSessionList",
+      "findRealtimeRdpSessionList.json",
+      "getSessionSnapshot.json",
+      "sessionMonitoringClose.json",
+      "getSessionUserInfo.json",
+      "sessionUsersClose.json",
+      "incidentsDatabaseServerAgentList",
+      "findIncidentsDatabaseServerAgentList.json",
+      "incidentsDatabaseServerAgentDetail",
+      "findIncidentsDatabaseServerAgentDetailSConList.json",
+      "findIncidentsDatabaseProgramUnitSample.json",
+      "incidentsDatabaseRealtimeServerList",
+      "findRealtimeSelectServerData"
+    ],
+    "screen_name": "API 컨트롤러 (IncidentsDatabaseController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/decide/customize/controller/DecideLGElectronicsController.java": {
+    "sms_urls": [
+      "apiApproval",
+      "apiDetail",
+      "decideInterfaceRequestInsertForLGElectronics"
+    ],
+    "screen_name": "API 컨트롤러 (DecideLGElectronicsController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/incidents/pcsecurity/controller/IncidentsPCSecurityController.java": {
+    "sms_urls": [
+      "incidentsEndpointEventListTotalCount.json",
+      "findIncidentsEndpointEventChart.json",
+      "findIncidentsEndpointEventSummary.json",
+      "incidentsEndpointEventList",
+      "findIncidentsEndpointEventList.json",
+      "incidentsEndpointEventDetail",
+      "incidentsEndpointEventScreenshot",
+      "requestExportIncidentsEndpointEventList.json",
+      "exportIncidentsEndpointEventSummary.down"
+    ],
+    "screen_name": "API 컨트롤러 (IncidentsPCSecurityController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/incidents/discovery/controller/PersonalInformationFileController.java": {
+    "sms_urls": [
+      "piFileManagerView.sms",
+      "csvPIFileManagerView.down",
+      "piFileManagerList.sms",
+      "findPIFileManagerList.json"
+    ],
+    "screen_name": "API 컨트롤러 (PersonalInformationFileController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/decide/customize/controller/DecideHyundaiDepartmentStoreController.java": {
+    "sms_urls": [
+      "hyundaiDecideRedirect",
+      "interface_hyundaiDecideRequest",
+      "interface_hyundaiCmpInfo"
+    ],
+    "screen_name": "API 컨트롤러 (DecideHyundaiDepartmentStoreController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/decide/customize/controller/DecideLGElectronicsTestController.java": {
+    "sms_urls": [
+      "receiveRequestCommand",
+      "decideTestForLGElectronics"
+    ],
+    "screen_name": "API 컨트롤러 (DecideLGElectronicsTestController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/auth/controller/TAController.java": {
+    "sms_urls": [
+      "{",
+      "taLogin",
+      "taExternalLogin",
+      "taLogout",
+      "taUserRegistration",
+      "taUserNotice",
+      "taLoginPopup",
+      "taKeepLogin",
+      "taUserPwdReset",
+      "getTAUserQuestion",
+      "chkTAQuestionAnswer",
+      "updateUserPassword"
+    ],
+    "screen_name": "API 컨트롤러 (TAController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/task/controller/TaskController.java": {
+    "sms_urls": [
+      "taskPcList",
+      "taskServerList",
+      "taskDatabaseList",
+      "{",
+      "{",
+      "{",
+      "{",
+      "taskPcDetail",
+      "taskServerDetail",
+      "taskDatabaseDetail",
+      "{",
+      "{",
+      "{",
+      "{",
+      "findTaskAgentbyId",
+      "checkLogGatherPasswordReauth",
+      "findLogGatherPassword",
+      "{",
+      "{",
+      "{",
+      "findTaskTargetAgent",
+      "{",
+      "findTaskFile",
+      "insertTaskFile",
+      "deleteTaskFile",
+      "taskFileCount",
+      "taskPcLogList",
+      "taskServerLogList",
+      "taskDatabaseLogList",
+      "taskPcLogDetail",
+      "taskServerLogDetail",
+      "taskDatabaseLogDetail",
+      "mypcDetailResultByTaskPC",
+      "myserverDetailResultByTaskServer",
+      "taskGetPcCnt",
+      "taskApplyTargetsImportFile.json",
+      "{",
+      "{",
+      "fundSuccessfullyAgentList.json",
+      "exportTaskServerList.down",
+      "findSelectTaskList.json",
+      "updateTaskForDecide.json",
+      "addDecideForPrivacyInfo.json",
+      "samsungfireApproval",
+      "taskFilesImportFile",
+      "collectionFileDownload",
+      "findQuarantineFileList",
+      "getCollectedItemsWithKeywordCount",
+      "findCollectedLogList",
+      "getTargetResponseState",
+      "addAutoResponseTasks",
+      "taskServerAdminDecideFileInfoCsvDownload.down",
+      "exportTaskPcFileList",
+      "exportTaskServerFileList",
+      "exportTaskDatabaseColumnList",
+      "getEndpointInfoCollectTaskGuid",
+      "deleteTaskFileBySearchFilter"
+    ],
+    "screen_name": "API 컨트롤러 (TaskController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/user/controller/UserController.java": {
+    "sms_urls": [
+      "ipSameCheck",
+      "userList",
+      "userListData",
+      "userView",
+      "deleteUserData",
+      "addUserData",
+      "updateUser",
+      "updateClearInvalidPwdCnt",
+      "chkUserID",
+      "chkAgent",
+      "setAgentStatus",
+      "setAgentRertyLogin",
+      "DeptDataInUser",
+      "DeptAddInUser",
+      "DeptEditInUser",
+      "DeptDelInUser",
+      "deptMove",
+      "setCentralizeIsolationFile",
+      "getDeptAllocIPData",
+      "deptIPSameAllocCheck",
+      "storeDeptAllocIPData",
+      "getTargetInfo",
+      "taLogoutTarget",
+      "chkExistsTComputerDataComputer",
+      "chkExistsTComputerDataIP",
+      "selectUnusedUserInfo",
+      "selectUserUnusedInternetPolicyInfo",
+      "deleteUserInInternetPolicy",
+      "deleteUserInHttpPolicy",
+      "getDBiUnUsedEmpPolicy",
+      "getDBiUnUsedEmp",
+      "deleteDBUnUseUserInPolicy",
+      "IPUserAllocCheck",
+      "findUserMysingleInterwork",
+      "chkDecideUserRegistrationUserIDCount",
+      "findExistsPasswordByCommand",
+      "setOTPUsers",
+      "updateNIRS_GPKIException",
+      "getDBiUnUsedUserIP",
+      "deleteDBUnUsedUserIP",
+      "getListByAgentId",
+      "dbiDMLAllowManagementList",
+      "findDMLAllowManagement",
+      "setDMLAllowManagement",
+      "incidentsLogAgreementList",
+      "findIncidentsLogAgreementListByCommand",
+      "findIncidentsLogAgreementByCommand",
+      "incidentsLogAgreementView",
+      "addIncidentsLogAgreement",
+      "modifyIncidentsLogAgreement",
+      "setIncidentsLogAgreement",
+      "removeIncidentsLogAgreement",
+      "downloadAgreement.json",
+      "exportIncidentsLogAgreementList",
+      "updateUserDefaultPwd",
+      "initUserPwd",
+      "accessTargetCheck",
+      "downloadAccessTargetTempletCsv.json",
+      "downloadAccessTargetCsv.json",
+      "setUserData.json",
+      "addAccessUserIP.json",
+      "activateUserData",
+      "findAccessGroupAllocList",
+      "addAccessGroupByCommand",
+      "updateAccessGroupUsageByCommand",
+      "updateAccessGroupByCommand",
+      "removeAccessGroupByCommand",
+      "setAccessGroupAllocDataByCommand",
+      "findDuplicateAccessGroupNameByCommand",
+      "downloadAccessGroupTargetCsv.json",
+      "downloadAccessGroupTargetTempletCsv.json",
+      "accessGroupTargetCheck",
+      "findGroupInAccessGroupByCommand"
+    ],
+    "screen_name": "API 컨트롤러 (UserController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/auth/controller/AuthController.java": {
+    "sms_urls": [
+      "loginform",
+      "loginPortalForm",
+      "authinit",
+      "authInitMail",
+      "{",
+      "{",
+      "{",
+      "mobileOTPCheck",
+      "mailOTPCheck",
+      "{",
+      "userSessionLogout",
+      "reserveSessionClearByID",
+      "sessionLogoutByID",
+      "updateAuthByID",
+      "reservationSession",
+      "cancelReservationSession",
+      "getLocaleInfo",
+      "getRSAModule",
+      "authLogin",
+      "loginEDR",
+      "getEDRLoginInfo",
+      "getAdminAuthInfo",
+      "resetPasswordIdForm",
+      "accountRegistration",
+      "resetPasswordIdCheck",
+      "resetPasswordOTP",
+      "resetPasswordExpired",
+      "selectProductMenuCheck",
+      "{"
+    ],
+    "screen_name": "API 컨트롤러 (AuthController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/AIController.java": {
+    "sms_urls": [
+      "insertAIChatHistory{:.+}",
+      "updateAIChatHistory{:.+}",
+      "findAIChatHistoryList{:.+}",
+      "findAIChatHistoryInfoBySessionGuid{:.+}",
+      "deleteAIChatHistory{:.+}",
+      "upsertAIAnalysisInfo{:.+}",
+      "findAIAnalysisInfoByLogGuid{:.+}",
+      "insertAINetappInfo{:.+}",
+      "findAINetappInfo{:.+}",
+      "upsertAIGlobalSetting{:.+}",
+      "findAIGlobalSetting{:.+}",
+      "findAIRiskAlertList{:.+}",
+      "findAIRiskAlertByIdx{:.+}",
+      "reviewAIRiskAlert{:.+}"
+    ],
+    "screen_name": "API 컨트롤러 (AIController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/mypc/controller/MyPCController.java": {
+    "sms_urls": [
+      "mypcDashboard",
+      "mypcDetailResultByDept",
+      "mypcDetailResultByUser",
+      "findMyPCDetailResultByDeptList",
+      "findMyPCDetailChartByDept",
+      "mypcDetailResultByUserDetail",
+      "findMyPCDetailResultByUserList",
+      "findMyPCDetailChartByUser",
+      "findMyPCDashboard",
+      "mypcExportByDept.down",
+      "mypcExportByUser.down",
+      "findMyPCUsedDiagnosisList"
+    ],
+    "screen_name": "API 컨트롤러 (MyPCController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/auth/controller/CSRFController.java": {
+    "sms_urls": [
+      "getCSRFToken"
+    ],
+    "screen_name": "API 컨트롤러 (CSRFController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/VmlController.java": {
+    "sms_urls": [
+      "vmlList",
+      "vmlListData",
+      "vmlView",
+      "vmlCheck",
+      "addVml",
+      "updateVml",
+      "deleteVml",
+      "updateVmlOrder",
+      "uploadDocument.json",
+      "trainVml.json",
+      "removeVml.json",
+      "revertVml.json",
+      "acceptVml.json",
+      "rejectVml.json",
+      "vmlFileDown",
+      "previewVml"
+    ],
+    "screen_name": "API 컨트롤러 (VmlController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/manage/controller/UsbController.java": {
+    "sms_urls": [
+      "usbList",
+      "usbListData",
+      "exportUsbList",
+      "usbView",
+      "addUsb",
+      "updateUsb",
+      "deleteUsb",
+      "usbCheck",
+      "deleteUsbByIDs",
+      "findUsbOwnerList",
+      "controlTargetUsb"
+    ],
+    "screen_name": "API 컨트롤러 (UsbController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/IdmController.java": {
+    "sms_urls": [
+      "idmList",
+      "idmListData",
+      "idmView",
+      "idmCheck",
+      "addIdm",
+      "updateIdm",
+      "deleteIdm",
+      "idmFileDown",
+      "updateIdmOrder",
+      "previewIdm"
+    ],
+    "screen_name": "API 컨트롤러 (IdmController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/EdmController.java": {
+    "sms_urls": [
+      "edmList",
+      "edmListData",
+      "edmView",
+      "edmCheck",
+      "addEdm",
+      "updateEdm",
+      "deleteEdm",
+      "updateEdmOrder"
+    ],
+    "screen_name": "API 컨트롤러 (EdmController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/user/controller/CloudController.java": {
+    "sms_urls": [
+      "{",
+      "{",
+      "{",
+      "{"
+    ],
+    "screen_name": "API 컨트롤러 (CloudController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/admin/controller/AdminController.java": {
+    "sms_urls": [
+      "adminList",
+      "adminListData",
+      "adminView",
+      "adminViewEDR",
+      "adminIDcheck",
+      "adminIPcheck",
+      "adminRoleCheck",
+      "adminWrite",
+      "importAdminFileCheck.json",
+      "downloadAdminFileTempletCsv.json",
+      "adminUpdate",
+      "adminDelete",
+      "checkPWD",
+      "adminMngList",
+      "checkOriSec",
+      "checkNewSec",
+      "DeptDataInAdmin",
+      "DeptAddInAdmin",
+      "DeptEditInAdmin",
+      "DeptDelInAdmin",
+      "updateAdminStatus",
+      "getAdminRoleNameInfoJSON",
+      "updateAdminRole",
+      "deleteAdminRole",
+      "addAdminRole",
+      "getAdminPermissionList",
+      "changeAdminID",
+      "adminManagerInfoList",
+      "{",
+      "{",
+      "activateAdminById"
+    ],
+    "screen_name": "API 컨트롤러 (AdminController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/user/controller/ServerController.java": {
+    "sms_urls": [
+      "{",
+      "{",
+      "{",
+      "{",
+      "{",
+      "{",
+      "{",
+      "{",
+      "{",
+      "{",
+      "{",
+      "serverGroupMoveByFile",
+      "groupGuidGuideDownload"
+    ],
+    "screen_name": "API 컨트롤러 (ServerController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/TreeController.java": {
+    "sms_urls": [
+      "tree",
+      "treeSearch",
+      "dbmsTree",
+      "dbmsTreeA",
+      "cloudTree",
+      "InsertAuditTrailForSECPVBU",
+      "InsertAuditTrailForPrivateProtection"
+    ],
+    "screen_name": "API 컨트롤러 (TreeController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/user/controller/SystemController.java": {
+    "sms_urls": [
+      "systemList",
+      "systemListData",
+      "systemView",
+      "deleteSystemData",
+      "addSystemData",
+      "updateSystem",
+      "updateClearInvalidPwdCntBySystem",
+      "DeptDataInSystem",
+      "DeptAddInSystem",
+      "DeptEditInSystem",
+      "DeptDelInSystem"
+    ],
+    "screen_name": "API 컨트롤러 (SystemController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/FormController.java": {
+    "sms_urls": [
+      "formList",
+      "formListData",
+      "formView",
+      "formCheck",
+      "addForm",
+      "updateForm",
+      "deleteForm",
+      "formFileDown",
+      "previewForm"
+    ],
+    "screen_name": "API 컨트롤러 (FormController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/ThemeController.java": {
+    "sms_urls": [
+      "themeList",
+      "themeView",
+      "themeCheck",
+      "deleteTheme",
+      "updateTheme",
+      "addTheme"
+    ],
+    "screen_name": "API 컨트롤러 (ThemeController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/PrintController.java": {
+    "sms_urls": [
+      "print"
+    ],
+    "screen_name": "API 컨트롤러 (PrintController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/CommonController.java": {
+    "sms_urls": [
+      "redirect",
+      "historyBack",
+      "warning",
+      "servletWarning",
+      "processKill",
+      "extendOption",
+      "reportExport",
+      "reportExportdown",
+      "jobScheduler",
+      "alertLicenseInfo",
+      "alertNotice",
+      "alertNoticeLicenseData",
+      "alertNoticeLogData",
+      "updateAlert",
+      "checkPolicyRevision",
+      "findRecentPolicy",
+      "findRecentAdditionalDetect",
+      "checkAdditionalDetectRevision",
+      "findRecentValidation",
+      "findMenuRollCheck.json",
+      "findPolicyTargetList",
+      "messageAlert",
+      "documentWriteViewer",
+      "initRSAEncrypt",
+      "checkFormRevision",
+      "findRecentForm",
+      "checkDetectRevision",
+      "findRecentDetect",
+      "getObjectReferenceList",
+      "getTargetFullGuid",
+      "getReportSavedFilter",
+      "interface_policyManagement",
+      "interface_MediaApproval",
+      "interface_MediaApprovalRemove",
+      "interface_MediaManagement",
+      "reloadDecideOption",
+      "checkRegex",
+      "uploadFileToBase64.json",
+      "uploadImageFile.json",
+      "getImageFile.json",
+      "updateTenantList",
+      "dragAndDropFileUpload",
+      "dragAndDropDeleteFile",
+      "pageExpired",
+      "interface_addAlertNotifications",
+      "interface_IsAgentInstalled",
+      "getMenuInfoEDR",
+      "logoutForEDR",
+      "deptManage.popup",
+      "getDeptNameFromGuid.json",
+      "getSMSPolicyStatusListByCommand",
+      "getLastAppliedTimeByObjectType",
+      "reqApprovalLoginGuid",
+      "interface_getPolicyInfoList",
+      "interface_policyApplyUserInfoList",
+      "interface_notifyAlertMessage",
+      "report_server",
+      "getEDRServerSendBody",
+      "dbiNoticePolicyAdd",
+      "getSessionAttribute",
+      "setSessionAttribute",
+      "setSessionSlideStatus",
+      "getServerTime",
+      "tabChange",
+      "fileDownloadChecker",
+      "auditLogPolicyView",
+      "checkTemplateName",
+      "getTemplateList",
+      "getTemplateData",
+      "addTemplateData",
+      "deleteTemplateData",
+      "addTemplateFavorite",
+      "deleteTemplateFavorite",
+      "getMailPolicyData",
+      "setMailPolicyData",
+      "getWebPolicyData",
+      "setWebPolicyData",
+      "getDBiDatabaseData",
+      "getDBiPolicyData",
+      "setDBiPolicyData",
+      "setDBiApprovalData",
+      "checkEDRCookie"
+    ],
+    "screen_name": "API 컨트롤러 (CommonController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/decide/controller/DecideController.java": {
+    "sms_urls": [
+      "decideUserPage",
+      "decideDecidingOfficerPage",
+      "decideUserAdminPage",
+      "decideNetworkUserAdminPage",
+      "decideDatabaseUserAdminPage",
+      "getDecideList",
+      "decideDetailPage",
+      "decideDetailExternalPage",
+      "decideNetworkDetailPage",
+      "decideDatabaseDetailPage",
+      "decideDetailUserPage",
+      "decideDetailOfficerPage",
+      "decideListResultProcess",
+      "decideNewRequest",
+      "decideNewRequestForNetworkFile",
+      "decideNewRequestForDB",
+      "decideNewRequestForNetworkSMTP",
+      "decideNewRequestForReAnalyze",
+      "decideNewRequestForRule",
+      "fileDecide",
+      "dbDecide",
+      "accountCheck",
+      "dbDecideAccountAdd",
+      "dbDecideAccountUpdate",
+      "dbDecideAccountDelete",
+      "dbDecideTuningQuery",
+      "dbDecideIP",
+      "dbDecidePassword",
+      "dbPolicyTarget",
+      "exportPolicyTargetJson",
+      "exportPolicyTargetJson2",
+      "userRegistrationDecide",
+      "dbDecideAllocDBMS",
+      "nerpDecide",
+      "nerpDecideRequest",
+      "serverDecide",
+      "decideNetworkNewRequest",
+      "decideRequestInsert",
+      "decideRequestInsertForNetworkFile",
+      "decideRequestInsertForNetworkSMTP",
+      "decideRequestInsertForReAnalyze",
+      "decideRequestInsertForDB_separate",
+      "decideRequestInsertForDB_integrate",
+      "decideRequestInsertForDB",
+      "decideRequestInsertForDBAccountAdd",
+      "decideRequestInsertForDBSqlTuning",
+      "decideRequestInsertForUserRegistration",
+      "decideRequestInsertForDBMSAdd",
+      "decideRequestInsertForDBMSRemove",
+      "decideRequestInsertForServerAdd",
+      "decideRequestInsertForServerRemove",
+      "requestMailDLPApproval",
+      "requestDatabaseApproval",
+      "getTest",
+      "getTest2",
+      "testJejubankSwingToken",
+      "decideResultProcess",
+      "insertDecideResponse",
+      "externalDecideResponse",
+      "externalDecideResponseForKDB",
+      "externalDecideLineResponse",
+      "decideFileDownload",
+      "downloadSomFile",
+      "decideAllResultProcess",
+      "decideDelegate",
+      "decideDelegatePortal",
+      "findDelegateList",
+      "updateDecideDelegate",
+      "findDecideDelegateCompareDate",
+      "insertDecideDelegate",
+      "addDecideDelegate",
+      "addDecideDelegatePortal",
+      "externalDecideInterface",
+      "getFileDownloadUrl",
+      "pageRedirectCDS",
+      "officerPasswordCheck",
+      "externalDecideResult",
+      "exportDecideList.down",
+      "getApprovalInfo",
+      "getApprovalInfoCount",
+      "MailList",
+      "getDecideAddressBook",
+      "addDecideAddressBook",
+      "updateDecideAddressBook",
+      "deleteDecideAddressBook",
+      "inspectPrivacyFile.json",
+      "mobileDecideList",
+      "getMobileDecideList",
+      "mobileDecideView",
+      "shinhanApproval",
+      "updateShinhanApproval",
+      "getShinhanApprovalList",
+      "decideDecidingOfficerPageForDongbu",
+      "reqWKApproval",
+      "decideRequestInsertForWKDLP",
+      "downloadJejuInternalDecideDocument.down",
+      "createQueryBeforeAfter",
+      "runQueryBeforeAfter",
+      "getApproveQueryBeforeAfter",
+      "approveQueryBeforeAfter",
+      "hanabankApproval",
+      "getSamsunglsSignCode",
+      "decideResultProcessMobile",
+      "ktHostData",
+      "setWebURLData",
+      "reloadIncidentsEndpointPreView",
+      "findDecideOfficerInfoList",
+      "decideRequestInsertForDBMaskingCancle",
+      "decideRequestInsertForServerMaskingCancle",
+      "decideRequestInsertForDBMSAllocate",
+      "decideRequestInsertForServerAllocate"
+    ],
+    "screen_name": "API 컨트롤러 (DecideController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/portal/controller/portalController.java": {
+    "sms_urls": [
+      "dbmsAllocList.smsc",
+      "serverAllocList.smsc",
+      "allocateAccessServerList.smsc",
+      "dbmsControlList.smsc",
+      "allocateAccessDBMSList.smsc",
+      "findDBAccountDataListByCommand",
+      "findServerAccountDataListByCommand",
+      "decideUserPagePortal",
+      "decideDecidingOfficerPagePortal",
+      "dbDecidePortal",
+      "dbDecideAccountAddPortal",
+      "dbPolicyTargetPortal",
+      "dbDecideAccountUpdatePortal",
+      "dbDecideAccountDeletePortal",
+      "dbDecidePasswordPortal",
+      "dbDecideIPPortal",
+      "dbDecideDBMSAddPortal",
+      "dbDecideDBMSRemovePortal",
+      "execApprovalImportDBMSCheck",
+      "execDBMSConnectCheck",
+      "execDBMSUnsupportConnectCheck",
+      "dbDecideDBMSAllocPortal",
+      "dbDecideAccountUsePortal",
+      "dbDecideAccountUseShortPortal",
+      "dbDecideAccessIPPortal",
+      "dbDecideAccessIPShortPortal",
+      "portalMyInfo",
+      "deallocateProxyDBMSAccount",
+      "{",
+      "dbDecideAccountServerAddPortal",
+      "dbDecideAccountServerUsePortal",
+      "dbDecideAccountServerUpdatePortal",
+      "dbDecideAccountServerDeletePortal",
+      "findServerInfo",
+      "dbDecideServerAddPortal",
+      "dbDecideServerRemovePortal",
+      "dbDecideTuningQueryPortal",
+      "updateDBAccountPasswordAndReturnLauncherLinkByCommand",
+      "updateAccountPasswordAndReturnLauncherLinkByCommand",
+      "dbDecideMaskingPortal",
+      "dbDecideServerMaskingPortal",
+      "dbDecideAllocDBMSPortal",
+      "findLauncherLinkByCommand",
+      "dbDecideAllocServerPortal",
+      "sendPasswordResetAuthCode.json",
+      "verificationCode.json",
+      "{",
+      "{"
+    ],
+    "screen_name": "API 컨트롤러 (portalController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/common/controller/MyInfoController.java": {
+    "sms_urls": [
+      "myInfo",
+      "myLocaleUpdate",
+      "myInfoUpdate",
+      "myInfoCheckSM",
+      "adminCheckSM",
+      "myInfoEDR",
+      "myInfoUpdateEDR",
+      "myInfoCheckSMEDR"
+    ],
+    "screen_name": "API 컨트롤러 (MyInfoController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/user/controller/HttpSDIPController.java": {
+    "sms_urls": [
+      "httpSDIPList",
+      "httpSDIPListData",
+      "httpSDIPView",
+      "httpSDIPAdd",
+      "httpSDIPUpdate",
+      "httpSDIPDelete",
+      "httpSDIPPolicyReload",
+      "chkHttpSDIPName",
+      "exportHTTPAccountData.down",
+      "importHTTPFileCheck.json",
+      "downloadHTTPTempletCsv.down"
+    ],
+    "screen_name": "API 컨트롤러 (HttpSDIPController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/system/controller/StatusController.java": {
+    "sms_urls": [
+      "statusList.sms",
+      "statusListData.json",
+      "statusView.sms",
+      "updateStatusOrder.json",
+      "insertStatusData.json",
+      "updateStatusUseOn.json",
+      "updateStatusData.json",
+      "deleteStatusData.json"
+    ],
+    "screen_name": "API 컨트롤러 (StatusController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/manage/controller/NoticeController.java": {
+    "sms_urls": [
+      "noticeList",
+      "noticeListData",
+      "noticeListTopData",
+      "noticeView",
+      "addNotice",
+      "updateNotice",
+      "deleteNotice"
+    ],
+    "screen_name": "API 컨트롤러 (NoticeController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/manage/controller/SurveyController.java": {
+    "sms_urls": [
+      "SurveyView",
+      "SubmitView",
+      "SurveySubmit"
+    ],
+    "screen_name": "API 컨트롤러 (SurveyController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/mobile/controller/MobileController.java": {
+    "sms_urls": [
+      "mobileLoginPrepare",
+      "mobileLoginProc"
+    ],
+    "screen_name": "API 컨트롤러 (MobileController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/user/controller/EquipmentController.java": {
+    "sms_urls": [
+      "equipmentList",
+      "findEquipmentListData",
+      "exportEquipmentListData",
+      "equipmentView",
+      "findEquipmentInstanceListByCommand",
+      "addEquipmentData",
+      "updateEquipmentData",
+      "deleteEquipmentData",
+      "chkEquipmentDuplicateName",
+      "chkEquipmentDuplicateIP",
+      "importEquipmentFileCheck.json",
+      "downloadEquipmentTempletCsv.down",
+      "downloadEquipmentTempletCsvDecide.down",
+      "execServerAccountManagement",
+      "findServerAccountByCommandToHashMapJSON",
+      "findServerAccountExists",
+      "exportServerAccountData.json",
+      "downloadAccountTempletCsv.json",
+      "checkForPWDView"
+    ],
+    "screen_name": "API 컨트롤러 (EquipmentController.java)"
+  },
+  "DLPCenter.View.Web/src/main/java/dlpcenter/manage/controller/PrinterController.java": {
+    "sms_urls": [
+      "printerList",
+      "printerListData"
+    ],
+    "screen_name": "API 컨트롤러 (PrinterController.java)"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/monitor.jsp": {
+    "sms_urls": [
+      "/view/monitor.jsp"
+    ],
+    "screen_name": "JVM Memory Monitor"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/common/mailForm.jsp": {
+    "sms_urls": [
+      "/view/common/mailForm.jsp"
+    ],
+    "screen_name": "Untitled Document"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/reanalyze/request.jsp": {
+    "sms_urls": [
+      "/view/reanalyze/request.jsp"
+    ],
+    "screen_name": "AI-DLP 정밀 분석 요청"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/custom/koreanair/main.jsp": {
+    "sms_urls": [
+      "/view/custom/koreanair/main.jsp"
+    ],
+    "screen_name": "Privacy-i 로그인 안내"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/common/serviceMailForm.jsp": {
+    "sms_urls": [
+      "/view/common/serviceMailForm.jsp"
+    ],
+    "screen_name": "Untitled Document"
+  },
+  "DLPCenter.View.Web/src/main/webapp/sso_tomato/sso_login_fail_tomato.jsp": {
+    "sms_urls": [
+      "/sso_tomato/sso_login_fail_tomato.jsp"
+    ],
+    "screen_name": "sso"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/trust.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/trust.jsp"
+    ],
+    "screen_name": "NETS*SSO TRUST"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/logon.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/logon.jsp"
+    ],
+    "screen_name": "NETS*SSO - Logon"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/web2app.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/web2app.jsp"
+    ],
+    "screen_name": "NETS*SSO"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/tfaInput.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/tfaInput.jsp"
+    ],
+    "screen_name": "NETS*SSO TFA"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/logonTfa.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/logonTfa.jsp"
+    ],
+    "screen_name": "NETS*SSO"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/logonEnc.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/logonEnc.jsp"
+    ],
+    "screen_name": "NETS*SSO"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/dupChoice.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/dupChoice.jsp"
+    ],
+    "screen_name": "NETS*SSO Duplication"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/report/clipreport5/common/sysinfo.jsp": {
+    "sms_urls": [
+      "/view/report/clipreport5/common/sysinfo.jsp"
+    ],
+    "screen_name": "CLIP report Server - System Information"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/esso.run.app.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/esso.run.app.jsp"
+    ],
+    "screen_name": "NETS*SSO"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/samsunglife/OAMUserInfo.jsp": {
+    "sms_urls": [
+      "/view/login/external/samsunglife/OAMUserInfo.jsp"
+    ],
+    "screen_name": "OAM USER INFO"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/manage/paragraphSimilarity/sessionDebug.jsp": {
+    "sms_urls": [
+      "/view/manage/paragraphSimilarity/sessionDebug.jsp"
+    ],
+    "screen_name": "Session Staging Safeguard Debugger"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/report/dbi/dbiDeviceStateStatistics/list.jsp": {
+    "sms_urls": [
+      "/view/report/dbi/dbiDeviceStateStatistics/list.jsp"
+    ],
+    "screen_name": "Report"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/dashboard/SPC/dashboardView_SPC_discover.jsp": {
+    "sms_urls": [
+      "/view/dashboard/SPC/dashboardView_SPC_discover.jsp"
+    ],
+    "screen_name": "SPC Custom Dashboard"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/dashboard/SPC/dashboardView_SPC_endpoint.jsp": {
+    "sms_urls": [
+      "/view/dashboard/SPC/dashboardView_SPC_endpoint.jsp"
+    ],
+    "screen_name": "SPC Custom Dashboard"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/decide/customize/jejubank/swingSignOnRedirect.jsp": {
+    "sms_urls": [
+      "/view/decide/customize/jejubank/swingSignOnRedirect.jsp"
+    ],
+    "screen_name": "Swing 기안창 이동"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/decide/customize/hyundai_department_store/hyundaiDecideRedirect.jsp": {
+    "sms_urls": [
+      "/view/decide/customize/hyundai_department_store/hyundaiDecideRedirect.jsp"
+    ],
+    "screen_name": "Redirecting..."
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/decide/dongbu/info.jsp": {
+    "sms_urls": [
+      "/view/decide/dongbu/info.jsp"
+    ],
+    "screen_name": "통합 결재 안내"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/custom/hana/submit.jsp": {
+    "sms_urls": [
+      "/view/custom/hana/submit.jsp"
+    ],
+    "screen_name": "SOMANSA DLP+ Center"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/custom/hana/survey.jsp": {
+    "sms_urls": [
+      "/view/custom/hana/survey.jsp"
+    ],
+    "screen_name": "SOMANSA DLP+ Center"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/abllife/login.jsp": {
+    "sms_urls": [
+      "/view/login/abllife/login.jsp"
+    ],
+    "screen_name": "ABL생명"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/abllife/welcome.jsp": {
+    "sms_urls": [
+      "/view/login/abllife/welcome.jsp"
+    ],
+    "screen_name": "ABL생명"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/abllife/login_e.jsp": {
+    "sms_urls": [
+      "/view/login/abllife/login_e.jsp"
+    ],
+    "screen_name": "ABL생명"
+  },
+  "DLPCenter.View.Web/src/main/webapp/decorators/fullSize_Layout.jsp": {
+    "sms_urls": [
+      "/decorators/fullSize_Layout.jsp"
+    ],
+    "screen_name": "<decorator:title /><%=title%>"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/account/httpSDIP/view.jsp": {
+    "sms_urls": [
+      "/view/account/httpSDIP/view.jsp"
+    ],
+    "screen_name": "After"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/account/user/view_nerp.jsp": {
+    "sms_urls": [
+      "/view/account/user/view_nerp.jsp"
+    ],
+    "screen_name": "After"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/decide/dongbu/Copy of info.jsp": {
+    "sms_urls": [
+      "/view/decide/dongbu/Copy of info.jsp"
+    ],
+    "screen_name": "통합 결재 안내"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/abllife/changePassword.jsp": {
+    "sms_urls": [
+      "/view/login/abllife/changePassword.jsp"
+    ],
+    "screen_name": "ABL생명"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/dashboard/dashboardDetailView.jsp": {
+    "sms_urls": [
+      "/view/dashboard/dashboardDetailView.jsp"
+    ],
+    "screen_name": "Dashboard Detail"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/default.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/default.jsp"
+    ],
+    "screen_name": "NETS*SSO"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/viewConfig.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/viewConfig.jsp"
+    ],
+    "screen_name": "SSO 환경설정"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/dashboard/SPC/dashboardDetailView.jsp": {
+    "sms_urls": [
+      "/view/dashboard/SPC/dashboardDetailView.jsp"
+    ],
+    "screen_name": "Dashboard Detail"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/login/external/lguplus/viewHeaders.jsp": {
+    "sms_urls": [
+      "/view/login/external/lguplus/viewHeaders.jsp"
+    ],
+    "screen_name": "SSO 통합인증 테스트 사이트"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/custom/shinhan/websiteAccessApplication.jsp": {
+    "sms_urls": [
+      "/view/custom/shinhan/websiteAccessApplication.jsp"
+    ],
+    "screen_name": "인터넷사이트 접속 신청서"
+  },
+  "DLPCenter.View.Web/src/main/webapp/view/dashboard/wooribank/dashboardDetailView.jsp": {
+    "sms_urls": [
+      "/view/dashboard/wooribank/dashboardDetailView.jsp"
+    ],
+    "screen_name": "Dashboard"
+  }
+}
